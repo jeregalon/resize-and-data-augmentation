@@ -66,7 +66,7 @@ def make_square_crop(img):
 def apply_augmentation(img):
     """Aplica varios cambios de color, brillo, contraste, etc."""
     # Brillo
-    img = ImageEnhance.Brightness(img).enhance(random.uniform(0.7, 1.3))
+    img = ImageEnhance.Brightness(img).enhance(random.uniform(0.7, 1))
     # Contraste
     img = ImageEnhance.Contrast(img).enhance(random.uniform(0.7, 1.3))
     # Saturación/Color
