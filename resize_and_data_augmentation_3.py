@@ -19,7 +19,7 @@ OUTPUT_FOLDER = r"C:\Users\Jose_Enrique\Documents\VSCode Projects\Python\redimen
 
 # Nuevo: procesar todo o solo un subconjunto
 PROCESS_SUBSET = False
-SUBSET_SIZE = 10
+SUBSET_SIZE = 418
 
 # --- CONFIG EXTRA ---
 DELAY_MIN = 0.2  # segundos
@@ -54,12 +54,16 @@ def weighted_angle():
 
 def make_square_crop(img):
     """Recorta la imagen a un cuadrado centrado"""
-    w, h = img.size
-    min_side = min(w, h)
-    left = (w - min_side) // 2
-    top = (h - min_side) // 2
-    right = left + min_side
-    bottom = top + min_side
+    # w, h = img.size
+    # min_side = min(w, h)
+    # left = (w - min_side) // 2
+    # top = (h - min_side) // 2
+    # right = left + min_side
+    # bottom = top + min_side
+    top = 0
+    bottom = 640
+    left = 220
+    right = 860
     return img.crop((left, top, right, bottom))
 
 
